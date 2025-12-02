@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Vazirmatn } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import SwRegister from "./sw-register"
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
@@ -12,7 +13,8 @@ const vazirmatn = Vazirmatn({
 export const metadata: Metadata = {
   title: "تشخیص سرطان با هوش مصنوعی",
   description: "سیستم پیشرفته تشخیص سرطان با استفاده از هوش مصنوعی",
-  generator: "v0.app",
+  manifest: "/manifest.json",
+  themeColor: "#ffffff",
 }
 
 export default function RootLayout({
@@ -25,6 +27,7 @@ export default function RootLayout({
       <body className={`${vazirmatn.className} font-sans antialiased`}>
         {children}
         <Analytics />
+        <SwRegister />
       </body>
     </html>
   )
