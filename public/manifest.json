@@ -4,7 +4,9 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#1c1b46",
+  "lang": "fa",
+  "dir": "rtl",
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -16,5 +18,18 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "description": "Detect Cancer With Ai",
+  "id": "CancerDx",
+  "categories": [
+    "medical"
+  ],
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "scope": "https://cancer-diagnosis.vercel.app/"
 }
