@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.cancer_diagnosis.twa",
+        "sha256_cert_fingerprints": ["41:B0:10:D1:A7:11:43:F3:11:61:48:15:6A:D3:A0:9C:B1:0C:17:35:4C:E4:07:A9:0A:43:A7:95:B9:46:AF:F0"]
+      }
+    }]
